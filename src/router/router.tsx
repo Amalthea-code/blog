@@ -3,7 +3,6 @@ import App from "../App";
 import AboutView from "../view/aboutView";
 import BlogView from "../view/blogView";
 import ContactsView from "../view/contactsView";
-import React from "react";
 
 const router = createBrowserRouter([
     {
