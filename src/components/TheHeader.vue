@@ -19,7 +19,7 @@
 
 <style lang="scss" scoped>
 .header {
-  background-color: #b1b1b1;
+  background-color: var(--main-color-medium);
   min-height: 10vh;
   display: flex;
   align-items: center;
