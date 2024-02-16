@@ -1,11 +1,5 @@
 <template>
-  <main>
-    qwer
-  </main>
+  <main>qwer</main>
 </template>
 
-<script setup lang="ts">
-
-</script>
-
-
+<script setup lang="ts"></script>

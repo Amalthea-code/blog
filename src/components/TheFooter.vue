@@ -1,12 +1,8 @@
 <template>
-  <footer class="footer">
-    .KDK2024
-  </footer>
+  <footer class="footer">.KDK2024</footer>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <style lang="scss" scoped>
 .footer {
