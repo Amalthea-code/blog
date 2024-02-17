@@ -9,10 +9,11 @@ const blogs = [
         title: 'Hello, World!',
         description: 'Information about my activities will periodically appear here, it is not yet known how long I will last, in time or desire, but I think something like this should have been done even earlier, and not by 4 years of programming experience. Thank you!',
         date: '14.02.2024',
-        code: function (output, event) {
+        code: function (output) {
             //create canvas
             const canvas = document.createElement("canvas")
             const ctx = canvas.getContext('2d');
+            canvas.fillStyle = "#FFFFFF";
             //obs
             canvas.addEventListener('click', function(evt) {
                 const mousePos = getMousePos(canvas, evt);
@@ -32,19 +33,30 @@ const blogs = [
                 };
             }
 
-// Function to check whether a point is inside a rectangle
             function isInside(pos, rect) {
                 return pos.x > rect.x && pos.x < rect.x + rect.width && pos.y < rect.y + rect.height && pos.y > rect.y
             }
 
-// The rectangle should have x,y,width,height properties
             const rect = {
                 x: 100,
                 y: 100,
                 width: 200,
                 height: 100,
             };
-
+            function Playbutton(rect, lWidth, fillColor, lineColor) {
+                ctx.beginPath();
+                ctx.rect(rect.x, rect.y, rect.width, rect.height);
+                ctx.fillStyle = 'rgba(225,225,225,0.5)';
+                ctx.fill();
+                ctx.lineWidth = 2;
+                ctx.strokeStyle = '#000000';
+                ctx.stroke();
+                ctx.closePath();
+                ctx.font = '40pt Kremlin Pro Web';
+                ctx.fillStyle = '#000000';
+                ctx.fillText('Start', rect.x + rect.width / 4, rect.y + 64);
+            }
+            Playbutton(rect);
 
             output.appendChild(canvas)
         },
