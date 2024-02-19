@@ -1,0 +1,7 @@
+1.Gameloop
+2.Функция new Game связанная с п1.
+3   this.camera = new Camera(0,0,this);
+4   this.player = new Player(100,-64,this);
+5   this.monster = new Player(896,128,this);
+6 Придумать систему калайдеров с замедлением и отсутствием проходимости
+7. Создать базовый тайл и базовые анимации

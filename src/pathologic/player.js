@@ -766,7 +766,5 @@ scenes['win'] = new Win(screen, controls);
 var current_scene = 'lib';
 
 loop.start(function frame(time) {
-
     current_scene = scenes[current_scene].render(time);
-
 });
